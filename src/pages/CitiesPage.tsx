@@ -6,16 +6,16 @@ import { useCitySelected } from "../hooks/cities/useCitySelected";
 import { useSearch } from "../hooks/useSearch";
 
 export const CitiesPage = () => {
-  const { debouncedSearch, handleSearch } = useSearch();
-  const { cities, allCoords, isLoading, isError } = useCities(debouncedSearch);
+  const { search, handleSearch } = useSearch();
+  const { cities, allCoords, isLoading, isError } = useCities(search);
   const { city, handleCity } = useCitySelected();
 
-  if (isLoading) return <div>Cargando...</div>;
-  if (isError) return <div>Error al cargar las ciudades</div>;
+  if (isError) return <p>Error al cargar las ciudades</p>;
+  if (isLoading) return <p>Cargando...</p>;
 
   return (
     <section className="flex flex-col gap-4 mx-auto w-80 max-w-md">
-      <CitiesSearch {...{ handleSearch }} />
+      <CitiesSearch {...{ handleSearch, search }} />
       <CitiesList {...{ cities, handleCity, city }} />
       <CitiesNearest {...{ city, allCoords }} />
     </section>

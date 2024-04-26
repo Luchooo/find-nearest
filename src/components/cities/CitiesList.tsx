@@ -19,7 +19,7 @@ export const CitiesList = ({ cities, handleCity, city }: CitiesListProps) => {
         List of cities
       </h3>
       <List className="mt-2">
-        {cities.length === 0 && <h1>Empty list</h1>}
+        {cities.length === 0 && <span>Empty list</span>}
         {cities.length > 0 && (
           <VirtualList {...{ cities, handleClick, city }} />
         )}

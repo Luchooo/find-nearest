@@ -2,7 +2,6 @@
 
 Find nearest cities. [technical-test.pdf](https://github.com/Luchooo/find-nearest/files/15125484/technical-test.pdf)
 
-
 # [Demo](https://find-cities-nearest.vercel.app/)
 
 # Description
@@ -44,6 +43,13 @@ npm run dev
 
 ```
 
+4. Run tests:
+
+```bash
+npm run test
+
+```
+
 4. Open [**http://localhost:5173**](http://localhost:5173/) with your browser to see the result 🚀
 </details>
 
@@ -56,6 +62,7 @@ npm run dev
 |     | Command | Action                                       |
 | :-- | :------ | :------------------------------------------- |
 | ⚙️  | `dev`   | Starts local dev server at `localhost:5173`. |
+| ⚙️  | `test`  | Run unit and integration tests.              |
 | ⚙️  | `build` | Build your production site to `./dist/`.     |
 
 </details>
@@ -87,7 +94,8 @@ npm run dev
 
   - TailwindCSS: Rapidly build modern websites without ever leaving your HTML.
   - Axios: A simple HTTP client based on promises for both the browser and Node.js:
-  - Geolib: Library to provide basic geospatial operations like distance calculation,.
+  - Geolib: Library to provide basic geospatial operations like distance calculation.
+  - React Testing Library: Builds on top of DOM Testing Library by adding APIs for working with React components.
     </details>
 
       </li>

@@ -3,7 +3,6 @@ export interface CityApi {
   country: string;
   lat: string;
   lng: string;
-  citiesNearest?: Coord[];
 }
 
 export interface Coord {
