@@ -1,6 +1,7 @@
 # Test
 
-Find nearest cities.
+Find nearest cities. [technical-test.pdf](https://github.com/Luchooo/find-nearest/files/15125484/technical-test.pdf)
+
 
 # [Demo](https://find-cities-nearest.vercel.app/)
 
